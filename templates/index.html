@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DocuDigest</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <section class="upper">
+    <header class="header">
+      <h1 class="header__title">DocuDigest</h1>
+    </header>
+    <p class="subheader">
+      Welcome to my AI-powered document analysis tool—your all-in-one solution for smarter, faster, and more efficient document management.
+    </p>
+    <h3 class="upload__cto">Start here</h3>
+
+    <!-- OUTSIDE of form to prevent submission -->
+    <input type="file" id="file-input" accept=".pdf,.txt" style="display:none;">
+    <button type="button" class="button__cto" id="upload-btn">
+      <span class="button__cto_text">Click to Summarize</span>
+    </button>
+  </section>
+
+  <section class="lower">
+    <header class="reviews">
+      <h2 class="reviews__title">Reviews</h2>
+      <div class="reviews__people">
+        <div class="reviews__people_item">
+          <div class="reviews__people_item_photo">
+            <img src="/static/images/research.jpg" alt="Photo of Priya N.">
+          </div>
+          <p class="reviews__people_item_text">
+            “DocuDigest completely changed how I handle research papers. The automatic summaries are spot on and save me hours every week!”
+            <span class="names">– Priya N., Research Analyst</span>
+          </p>
+        </div>
+        <div class="reviews__people_item">
+          <div class="reviews__people_item_photo">
+            <img src="/static/images/gstudent.jpg" alt="Photo of Alex R.">
+          </div>
+          <p class="reviews__people_item_text">
+            “The question-answering feature is a lifesaver. I can just ask a question and instantly get the exact section I need from a document.”
+            <span class="names">– Alex R., Graduate Student</span>
+          </p>
+        </div>
+        <div class="reviews__people_item">
+          <div class="reviews__people_item_photo">
+            <img src="/static/images/analyst.jpg" alt="Photo of Dana K.">
+          </div>
+          <p class="reviews__people_item_text">
+            “Sleek, fast, and surprisingly accurate. I uploaded a 100-page PDF and had a summary and smart Q&A ready within seconds.”
+            <span class="names">– Dana K., Legal Consultant</span>
+          </p>
+        </div>
+        <div class="reviews__people_item">
+          <div class="reviews__people_item_photo">
+            <img src="/static/images/student.jpg" alt="Photo of Jordan M.">
+          </div>
+          <p class="reviews__people_item_text">
+            “As a student juggling tons of reading, DocuDigest is a game-changer. It turns dense material into clear, digestible insights.”
+            <span class="names">– Jordan M., University Student</span>
+          </p>
+        </div>
+      </div>
+    </header>
+  </section>
+  <script src="/static/script.js"></script>
+</body>
+</html>

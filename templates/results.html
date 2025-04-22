@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DocuDigest – Results</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="container single-column">
+    <h1 class="title">DocuDigest</h1>
+
+    <!-- Summary -->
+    <section class="section">
+      <h2>Summary</h2>
+      <div class="summary-box" id="summary-box"></div>
+    </section>
+
+    <!-- Audio + Restart row -->
+    <label>Play audio</label>
+    <div class="row controls-row">
+      <div class="audio-controls">
+        <div class="buttons">
+          <button id="play-btn">▶ Play</button>
+          <button id="stop-btn">■ Stop</button>
+        </div>
+      </div>
+      <button id="start-over-btn" class="upload-btn">Upload Another PDF</button>
+    </div>
+
+    <!-- Compare -->
+    <section class="section">
+      <label for="compare-input">Upload a document to compare</label>
+      <div class="row">
+        <input type="file" id="compare-input" accept=".pdf,.txt" />
+        <button id="compare-btn" class="upload-btn">Compare</button>
+      </div>
+      <div id="difference-box" class="summary-box hidden">
+        <em>No comparison done yet.</em>
+      </div>
+      <div id="merge-controls" class="row hidden">
+        <button id="merge-btn" class="upload-btn">Merge Documents</button>
+        <button id="save-btn" class="upload-btn hidden">Save as PDF</button>
+      </div>
+    </section>
+
+    <!-- Search / Q&A -->
+    <section class="section">
+      <h2>Search</h2>
+      <textarea class="search-box" id="question-box"
+                placeholder="Ask a question or search..."></textarea>
+      <button id="ask-btn" class="upload-btn">Ask</button>
+      <div id="qa-answer" class="summary-box"></div>
+    </section>
+
+    <!-- Similar Documents -->
+    <section class="section similar-section">
+      <h2>Similar Documents</h2>
+      <ul id="similar-docs"></ul>
+    </section>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
